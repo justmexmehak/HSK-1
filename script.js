@@ -31,8 +31,8 @@ const chap2PhrasesMeanings = ['Thank you!', 'Sure!', 'Thank you!',
 
 
 const chap2Words = ['s&#257;n', 'sh&#257;n', 'zh&#257;ng', 'y&#225;ng',
-                    'l&#237;ng', 'c&#224;', 'sh&#466;u', 'xi&#243;ng',
-                    'y&#250;n', 'x&#299;ng', 'yu&#225;', 'r&#233;n',
+                    'l&#237;ng', 'c&#224;i', 'sh&#466;u', 'xi&#243;ng',
+                    'y&#250;n', 'x&#299;ng', 'yu&#225;n', 'r&#233;n',
                     'chu&#225;n', 'chu&#225;ng', 'ch&#299;', 'r&#232;',
                     'b&#299;ngxi&#257ng', 'j&#299;d&#224;n', 's&#299;j&#299;', 'z&#250;qi&#250;',
                     'j&#299;ch&#462;ng', 'p&#225; sh&#257;n', 'sh&#466;ubi&#462;o', 'xi&#466;ngm&#257;o'];
@@ -72,7 +72,7 @@ const chap3Text3Meaning = ['Are you Chinese?',
 
 const chap4Words = ['t&#257; (&#22909;)', 'sh&#233;i', 'de', 'H&#224;ny&#468;',
                     'n&#462;', 'gu&#243;', 'ne',
-                    't&#257; (&#22909)', 't&#243;ngxu&#233;', 'p&#233;ngyou'];
+                    't&#257; (&#20170;)', 't&#243;ngxu&#233;', 'p&#233;ngyou'];
 
 const chap4Meanings = ['she / her', 'who / whom', 'used after an attribute', 'Chinese (language)',
                        'which', 'country', 'used at the end of a question'];
@@ -281,7 +281,12 @@ for (let i = 0; i < radioButtons.length; i++) {
         }
 
 
-
+function listall(){
+  let final = chap1Words.concat(chap2Words, chap3Words, chap4Words, chap5Words, chap6Words);
+  console.log(final);
+  let ans = chap1Meanings.concat(chap2Meanings, chap3Meanings, chap4Meanings, chap5Meanings, chap6Meanings);
+  populateTable(final, ans);
+}
 
   
 
